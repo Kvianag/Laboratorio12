@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        // Definimos un arreglo de números
+        const numeros = [5, 10, 15, 20, 25];
+
+        // Parte 1: Calcular la suma total
+        let suma = 0;
+        for (let i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+        console.log("La suma total es: " + suma);
+
+        // Calcular el promedio
+        let promedio = suma / numeros.length;
+        console.log("El promedio es: " + promedio);
+
+        // Mostrar los resultados en el documento
+        document.write("<h3>Resultados:</h3>");
+        document.write("<p>Arreglo de números: " + numeros.join(", ") + "</p>");
+        document.write("<p>Suma del arreglo es: " + suma + "</p>");
+        document.write("<p>Promedio: " + promedio + "</p>");
+    </script>
+</body>
+</html>
