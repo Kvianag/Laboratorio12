@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+        const PASSWORD_CORRECTA = "1234";
+        let intentoPassword;
+        do {
+            intentoPassword = prompt("Por favor, ingrese la contraseña:");
+            
+            if (intentoPassword !== PASSWORD_CORRECTA) {
+                document.write("<p>Contraseña incorrecta. Intente nuevamente.</p>");
+            } else {
+                document.write("<p>¡Contraseña correcta! Acceso concedido.</p>");
+            }
+        } while (intentoPassword !== PASSWORD_CORRECTA);
+    </script>
+</body>
+</html>
